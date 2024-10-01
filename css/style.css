@@ -1,0 +1,95 @@
+body {
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+    background-image: url('../imgs/heras1.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slogan {
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+.section-about, .section-beers, .section-gallery, .section-contact {
+    padding: 60px 0;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    background-color: #dd0f0f8c;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    display: none;
+}
+
+/* Animations */
+.section-about h2, .section-beers h2 {
+    opacity: 0;
+    animation: slideIn 5s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-content img {
+    transform: translateX(-100%);
+    animation: slideImage 3s forwards;
+}
+
+.about-content p {
+    transform: translateX(100%);
+    animation: slideText 3s forwards;
+}
+
+@keyframes slideImage {
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideText {
+    to {
+        transform: translateX(0);
+    }
+}
