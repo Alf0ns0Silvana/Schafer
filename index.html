@@ -57,46 +57,105 @@
         </section>
     </div>
     
- <!-- Cervezas -->
-<div class="container-fluid mt-10"> 
-    <section id="cervezas" class="section-beers">
-        <h2 class="text-center">Cervezas</h2>
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-2 mb-4">
-                <h3>Blonde</h3>
-                <img src="./imgs/heras1.jpg" alt="Cerveza 1" class="img-fluid">
-                <p>description</p>
-                <span>algo mas</span>
+    <!-- Cervezas -->
+    <div class="container mt-5">
+        <h2 class="text-center">Nuestras Cervezas</h2>
+        
+        <!-- Filtros -->
+        <div class="text-center my-4">
+            <button class="btn btn btn-dark filter-btn" data-filter="all">Todas</button>
+            <button class="btn btn btn-dark filter-btn" data-filter="Blonde">Blonde</button>
+            <button class="btn btn btn-dark filter-btn" data-filter="Ipa">Ipa</button>
+            <button class="btn btn btn-dark filter-btn" data-filter="Stout">Stout</button>
+            <button class="btn btn btn-dark filter-btn" data-filter="Red">Red</button>
+            <button class="btn btn btn-dark filter-btn" data-filter="Citric">Citric</button>
+        </div>
+
+        <!-- Cervezas -->
+        <div class="row" id="beerCards">
+
+            <!-- Card 1: Blonde -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 beer-card Blonde">
+                <div class="card h-100">
+                    <img src="./imgs/heras1.jpg" class="card-img-top" alt="Blonde Beer">
+                    <div class="card-body text-left">
+                        <h5 class="card-title">Blonde</h5>
+                        <p class="card-text">Cerveza rubia fresca y suave.</p>
+                        <p class="price">$2300</p>
+                        <div class="d-flex justify-content-around">
+                            <a href="https://wa.me/3412290622?text=Quiero%20pedir%20una%20Blonde" target="_blank" class="btn btn-success">Pedir por WhatsApp</a>
+                            <a href="https://www.mercadopago.com.ar/payment-link" target="_blank" class="btn btn-primary">Pedir por Mercado Pago</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <h3>Stout</h3>
-                <img src="./imgs/heras1.jpg" alt="Cerveza 2" class="img-fluid">
-                <p>description</p>
-                <span>algo mas</span>
+
+            <!-- Card 2: Ipa -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 beer-card Ipa">
+                <div class="card h-100">
+                    <img src="./imgs/heras1.jpg" class="card-img-top" alt="Ipa Beer">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ipa</h5>
+                        <p class="card-text">Cerveza con aroma cítrico y amargor pronunciado.</p>
+                        <p class="price">$2500</p>
+                        <div class="d-flex justify-content-around">
+                            <a href="https://wa.me/3412290622?text=Quiero%20pedir%20una%20Ipa" target="_blank" class="btn btn-success">Pedir por WhatsApp</a>
+                            <a href="https://www.mercadopago.com.ar/payment-link" target="_blank" class="btn btn-primary">Pedir por Mercado Pago</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-2 mb-4">
-                <h3>Red</h3>
-                <img src="./imgs/heras1.jpg" alt="Cerveza 3" class="img-fluid">
-                <p>description</p>
-                <span>algo mas</span>
+
+            <!-- Card 3: Stout -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 beer-card Stout">
+                <div class="card h-100">
+                    <img src="./imgs/heras1.jpg" class="card-img-top" alt="Stout Beer">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Stout</h5>
+                        <p class="card-text">Cerveza oscura con notas de café y chocolate.</p>
+                        <p class="price">$2400</p>
+                        <div class="d-flex justify-content-around">
+                            <a href="https://wa.me/3412290622?text=Quiero%20pedir%20una%20Stout" target="_blank" class="btn btn-success">Pedir por WhatsApp</a>
+                            <a href="https://www.mercadopago.com.ar/payment-link" target="_blank" class="btn btn-primary">Pedir por Mercado Pago</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <h3>Ipa</h3>
-                <img src="./imgs/heras1.jpg" alt="Cerveza 4" class="img-fluid">
-                <p>description</p>
-                <span>algo mas</span>
+
+            <!-- Card 4: Red -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 beer-card Red">
+                <div class="card h-100">
+                    <img src="./imgs/heras1.jpg" class="card-img-top" alt="Red Beer">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Red</h5>
+                        <p class="card-text">Cerveza rojiza con sabor caramelizado.</p>
+                        <p class="price">$2200</p>
+                        <div class="d-flex justify-content-around">
+                            <a href="https://wa.me/3412290622?text=Quiero%20pedir%20una%20Red" target="_blank" class="btn btn-success">Pedir por WhatsApp</a>
+                            <a href="https://www.mercadopago.com.ar/payment-link" target="_blank" class="btn btn-primary">Pedir por Mercado Pago</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-2 mb-4">
-                <h3>Cítric</h3>
-                <img src="./imgs/heras1.jpg" alt="Cerveza 5" class="img-fluid">
-                <p>description</p>
-                <span>algo mas</span>
+
+            <!-- Card 5: Citric -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 beer-card Citric">
+                <div class="card h-100">
+                    <img src="./imgs/heras1.jpg" class="card-img-top" alt="Citric Beer">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Citric</h5>
+                        <p class="card-text">Cerveza con toques cítricos y refrescantes.</p>
+                        <p class="price">$2300</p>
+                        <div class="d-flex justify-content-around">
+                            <a href="https://wa.me/3412290622?text=Quiero%20pedir%20una%20Citric" target="_blank" class="btn btn-success">Pedir por WhatsApp</a>
+                            <a href="https://www.mercadopago.com.ar/payment-link" target="_blank" class="btn btn-primary">Pedir por Mercado Pago</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-</div>
+    </div>
 
-    
     <!-- Galería -->
     <div class="container-fluid">
         <section id="galeria" class="section-gallery">

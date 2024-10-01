@@ -30,6 +30,32 @@ body {
 .section-about, .section-beers, .section-gallery, .section-contact {
     padding: 60px 0;
 }
+                    /* seccion nuestras cervezas */
+
+
+.beer-card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.beer-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+.price {
+    font-size: 1.5em;
+    color: #28a745;
+    font-weight: bold;
+}
+.filter-btn {
+    margin: 5px;
+}
+
+                        /* seccion sobre nosotros */
 
 .about-content {
     display: flex;
@@ -47,7 +73,6 @@ body {
     border-radius: 50%;
     text-align: center;
 }
-
 .back-to-top {
     position: fixed;
     bottom: 60px;
