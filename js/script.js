@@ -7,7 +7,7 @@ window.onscroll = function() {
     }
 };
 
-// Filtro de cervezas
+// Filtro
 const filterButtons = document.querySelectorAll('.filter-btn');
 const beerCards = document.querySelectorAll('.beer-card');
 
@@ -15,13 +15,10 @@ filterButtons.forEach(button => {
     button.addEventListener('click', () => {
         const filter = button.getAttribute('data-filter');
 
-        // Ocultar todas las cervezas
         beerCards.forEach(card => {
             card.classList.remove('show');
             setTimeout(() => card.style.display = 'none', 800);
         });
-
-        // Mostrar las cervezas filtradas
         setTimeout(() => {
             beerCards.forEach(card => {
                 if (filter === 'all' || card.classList.contains(filter)) {
