@@ -12,17 +12,16 @@
 <body>
 
 <!-- Header -->
-<header class="header">
-    <div class="container-fluid mt-0">
-        <div class="overlay"></div>
-        <h1 class="text-center mt-0">Heras</h1>
-        <nav class="navbar navbar-expand-sm sticky-top">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            <div class="container">
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
+<header class="header" id="inicio">
+    <h1 class="logo">Logo</h1>
+    <div class="container">
+        <nav class="navbar navbar-expand-sm custom-navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="#cervezas">Cervezas</a></li>
@@ -64,21 +63,21 @@
 
         <!-- Filtros -->
         <div class="text-center my-4">
-            <button class="btn btn btn-dark filter-btn" data-filter="all">Todas</button>
-            <button class="btn btn btn-dark filter-btn" data-filter="Blonde">Blonde</button>
-            <button class="btn btn btn-dark filter-btn" data-filter="Ipa">Ipa</button>
-            <button class="btn btn btn-dark filter-btn" data-filter="Stout">Stout</button>
-            <button class="btn btn btn-dark filter-btn" data-filter="Red">Red</button>
-            <button class="btn btn btn-dark filter-btn" data-filter="Citric">Citric</button>
-            <button class="btn btn btn-dark filter-btn" data-filter="Cajon">Cajón</button>
+            <button class="btn filter-btn" data-filter="all">Todas</button>
+            <button class="btn filter-btn" data-filter="Blonde">Blonde</button>
+            <button class="btn filter-btn" data-filter="Ipa">Ipa</button>
+            <button class="btn filter-btn" data-filter="Stout">Stout</button>
+            <button class="btn filter-btn" data-filter="Red">Red</button>
+            <button class="btn filter-btn" data-filter="Citric">Citric</button>
+            <button class="btn filter-btn" data-filter="Cajon">Cajón</button>
         </div>
 
         <!-- Cervezas -->
         <div class="row" id="beerCards">
             <!-- Card 1: Blonde -->            
-            <div class="col-lg-4 col-md-12 mb-4 beer-card Blonde">
-                <div class="card-section card-section rounded shadow">
-                    <div class="card-header card-header text-center rounded-top" style="background: linear-gradient(135deg, #00A878, #00B4D8);">
+            <div class="col-12 col-md-6 col-lg-4 beer-card Blonde">
+                <div class="card-section card-section rounded shadow" >
+                    <div class="card-header card-header text-center rounded-top" style="background: linear-gradient(135deg, #e0c52c, #ffeb3bbd);">
                         <h2 class="card-header-title mb-3 text-white">BLONDE</h2>
                         <img src="./imgs/heras1.jpg" class="card-img-top" alt="Foto cerveza blonde">
                     </div>
@@ -101,7 +100,7 @@
                 </div>
             </div>
             <!-- Card 2: Ipa -->
-            <div class="col-lg-4 col-md-12 mb-4 beer-card beer-card Ipa">
+            <div class="col-12 col-md-6 col-lg-4 beer-card beer-card Ipa">
                 <div class="card-section card-section rounded shadow">
                     <div class="card-header card-header text-center rounded-top" style="background: linear-gradient(135deg, #00A878, #00B4D8);">
                         <h2 class="card-header-title mb-3 text-white">IPA</h2>
@@ -126,9 +125,9 @@
                 </div>
             </div>
             <!-- Card 3: Stout -->
-            <div class="col-lg-4 col-md-12 mb-4 beer-card Stout">
+            <div class="col-12 col-md-6 col-lg-4 beer-card Stout">
                 <div class="card-section card-section rounded shadow">
-                    <div class="card-header card-header text-center rounded-top" style="background: linear-gradient(135deg, #00A878, #00B4D8);">
+                    <div class="card-header card-header text-center rounded-top" style="background: linear-gradient(135deg, #2F4F4F, #000000);">
                         <h2 class="card-header-title mb-3 text-white">STOUT</h2>
                         <img src="./imgs/heras1.jpg" class="card-img-top" alt="Foto cerveza Stout">
                     </div>
@@ -151,9 +150,9 @@
                 </div>
             </div>
             <!-- Card 4: Red -->
-            <div class="col-lg-4 col-md-12 mb-4 beer-card Red">
+            <div class="col-12 col-md-6 col-lg-4 beer-card Red">
                 <div class="card-section card-section rounded shadow">
-                    <div class="card-header card-header text-center rounded-top" style="background: linear-gradient(135deg, #00A878, #00B4D8);">
+                    <div class="card-header card-header text-center rounded-top" style="background: linear-gradient(135deg, #830909bb, #ff000d);">
                         <h2 class="card-header-title mb-3 text-white">RED</h2>
                         <img src="./imgs/heras1.jpg" class="card-img-top" alt="Foto cerveza Stout">
                     </div>
@@ -176,9 +175,9 @@
                 </div>
             </div>
             <!-- Card 5: Citric -->
-            <div class="col-lg-4 col-md-12 mb-4 beer-card Citric">
+            <div class="col-12 col-md-6 col-lg-4 beer-card Citric">
                 <div class="card-section card-section rounded shadow">
-                    <div class="card-header card-header text-center rounded-top" style="background: linear-gradient(135deg, #00A878, #00B4D8);">
+                    <div class="card-header card-header text-center rounded-top" style="background: linear-gradient(135deg, #ffa844, #f0a927cb);">
                         <h2 class="card-header-title mb-3 text-white">CITRIC</h2>
                         <img src="./imgs/heras1.jpg" class="card-img-top" alt="Foto cerveza cítrica">
                     </div>
@@ -201,9 +200,9 @@
                 </div>
             </div>
             <!-- Card 6 : Cajon  -->
-            <div class="col-lg-4 col-md-12 mb-4 beer-card Cajon">
+            <div class="col-12 col-md-6 col-lg-4 beer-card Cajon">
                 <div class="card-section card-section rounded shadow">
-                    <div class="card-header card-header text-center rounded-top" style="background: linear-gradient(135deg, #00A878, #00B4D8);">
+                    <div class="card-header card-header text-center rounded-top" style="background: linear-gradient(135deg,  #A9A9A9, #808080);">
                         <h2 class="card-header-title mb-3 text-white">CAJÓN</h2>
                         <img src="./imgs/heras1.jpg" class="card-img-top" alt="Blonde Beer">
                     </div>
