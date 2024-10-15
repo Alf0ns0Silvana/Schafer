@@ -4,7 +4,7 @@
     --font-base:"Melodrama", sans-serif;
 }
 body {
-    font-family:  var(--font-base);
+    /* font-family:  var(--font-base); */
     box-sizing: border-box;
     background-color: #e4e4e4a4;
     color: #909597;
@@ -100,21 +100,95 @@ h1,h2,h3,h4,h5,h6,
 .navbar-nav .nav-link::after {
     display: block;
 }
+
+                    /* seccion header */
+
 .header {
     top: -100px;
     position: relative;
     height: 100vh;
-    background-image: url('../imgs/heras1.jpg');
+    background-image: url('../imgs/herasportada1.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
     color: #606263;
 }
-.section-about, .section-gallery, .section-contact {
+.contenido-header {
+    flex-direction: column; 
+    justify-content: center;
+}
+.slogan{
+    padding: 0px 16px;
+}
+.contenido-header a span {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    margin: 5px 8px;
+}
+.section-gallery, .section-contact {
     padding: 60px 0;
 }
+
                     /* seccion nuestras cervezas */
 
+.filter-btn {
+    color: black;
+    width: 90px;
+    transition: 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.filter-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    border-radius: 20%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.8s ease;
+    z-index: -1;
+}
+.filter-btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+.filter-btn:hover {
+    color: black;
+}
+.filter-btn.all:hover::before {
+    background-color: rgba(255, 255, 255, 0.822);
+}
+.filter-btn.blonde:hover::before {
+    background: linear-gradient(135deg, #e0c52c, #ffeb3b);
+}
+.filter-btn.ipa:hover::before {
+    background: linear-gradient(135deg, #00A878, #00B4D8);
+}
+.filter-btn.stout:hover::before {
+    background: linear-gradient(135deg, #2F4F4F, #000000);
+}
+.filter-btn.red:hover::before {
+    background: linear-gradient(135deg, #830909bb, #ff000d);
+}
+.filter-btn.citric:hover::before {
+    background: linear-gradient(135deg, #ffa844, #f0a927cb);
+}
+.filter-btn.cajon:hover::before {
+    background: linear-gradient(135deg,  #A9A9A9, #808080);
+}
+#cervezas::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 8%;
+    height: 4px;
+    background-color: #f1d010e6;       
+}            
 #beerCards{
     justify-content: center;
 }
@@ -174,21 +248,43 @@ h1,h2,h3,h4,h5,h6,
 }
 
                         /* seccion sobre nosotros */
-/* .img-about{
-    left: 75px;
-    top: 22px;
-    width: 65%;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-    border-radius: 5px;
-} */
+
 .about-content {
     display: flex;
     justify-content: space-between;
+    line-height: 1.6;
+    color: #333;
 }
-/* .img-text-about{
-    overflow: hidden;
-} */
+
+.sobre_nosotros::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 8%;
+    height: 4px;
+    background-color: #f1d010e6;
+}
+.img-about {
+    max-height: 420px;
+    object-fit: cover;
+    width: 58%;
+    border-radius: 2%;
+}
+.features-icons i.icon {
+    font-size: 2.5rem;
+    color: #f1d010e6;
+}
+.features-icons h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.features-icons p {
+    font-size: 0.95rem;
+    color: #667;
+}
                             /* Animations */
 
 .section-about h2, .section-beers h2 {
@@ -202,21 +298,18 @@ h1,h2,h3,h4,h5,h6,
     }
 }
 .about-content, .img-about {
-    transform: translateX(-100%);
-    animation: slideImage 3s forwards;
+    transform: translateY(20%);
+    animation: slideImage 5s forwards;
 }
-.about-content {
-    transform: translateX(100%);
-    animation: slideText 3s forwards;
-}
+
 @keyframes slideImage {
     to {
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 @keyframes slideText {
     to {
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
                                 /* Btns wp y to top */
@@ -238,14 +331,9 @@ h1,h2,h3,h4,h5,h6,
     text-decoration: none;
 }
 .back-to-top {
-    width: 30px;
-    height: 30px;
     position: fixed;
-    bottom: 15px;
-    right: 75px;
-    color: rgb(255, 0, 0);
-    padding: 5px;
-    border-radius: 50%;
+    bottom: 26px;
+    right: 80px;
     display: none;
 }
 
@@ -270,7 +358,7 @@ h1,h2,h3,h4,h5,h6,
     }
     
     body.offcanvas-open {
-        padding-right: 0px ;
+        padding-right: 0px !important;
         overflow-y: auto ;
     }
       
