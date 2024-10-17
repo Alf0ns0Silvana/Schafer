@@ -43,3 +43,8 @@ const observer = new IntersectionObserver(entries => {
 beerCards.forEach(card => {
     observer.observe(card);
 });
+
+// Función para cambiar la imagen en el modal
+function changeModalImage(imageSrc) {
+    document.getElementById('modalImage').src = imageSrc;
+}

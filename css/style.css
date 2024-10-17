@@ -15,7 +15,9 @@ h1,h2,h3,h4,h5,h6,
     font-weight: 600;
 }
 .h1{
-    color:  #fad713;
+    background: linear-gradient(135deg, rgb(249 215 121) 0%, rgb(143 100 14 / 88%) 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 0px;
 }
 
@@ -51,7 +53,9 @@ h1,h2,h3,h4,h5,h6,
     justify-content: space-between;
 }
 .navbar-nav .nav-link:hover {
-    color: #FFD700;
+    background: linear-gradient(135deg, rgb(249 215 121) 0%, rgb(143 100 14 / 88%) 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
 }
 
 .navbar-nav .nav-link::after {
@@ -59,7 +63,10 @@ h1,h2,h3,h4,h5,h6,
     display: block;
     width: 0;
     height: 3px;
-    background: linear-gradient(20deg, #e0c52c, #ffeb3bbd);
+    background: linear-gradient(135deg, rgb(249 215 121) 0%, rgb(143 100 14 / 88%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     transition: width 0.6s ease;
     position: absolute;
     bottom: -3px;
@@ -68,7 +75,7 @@ h1,h2,h3,h4,h5,h6,
 }
 .navbar-nav .nav-link:hover::after {
     width: 100%;
-    background: linear-gradient(90deg, #fad713, #ffeb3bbd);
+    background: linear-gradient(135deg, rgb(249 215 121) 0%, rgb(143 100 14 / 88%) 100%);
 }
 .custom-offcanvas {
     background-color: #000000d6;
@@ -85,7 +92,7 @@ h1,h2,h3,h4,h5,h6,
 .navbar-toggler {
     border: none;
     height: 42px; 
-    background-color: #f1d010e6;
+    background: linear-gradient(135deg, rgb(249 215 121) 0%, rgb(143 100 14 / 88%) 100%);
 }
 .navbar-toggler:focus{
     box-shadow: none;
@@ -107,7 +114,7 @@ h1,h2,h3,h4,h5,h6,
     top: -100px;
     position: relative;
     height: 100vh;
-    background-image: url('../imgs/herasportada1.jpg');
+    background-image: url('../imgs/heras1.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -121,21 +128,64 @@ h1,h2,h3,h4,h5,h6,
     padding: 0px 16px;
 }
 .contenido-header a span {
+    border: none;
     display: inline-block;
     width: 250px;
     text-align: center;
     margin: 5px 8px;
 }
+.explore {
+    background:linear-gradient(135deg, rgb(249 215 121) 0%, rgb(143 100 14) 100%);
+}
 .section-gallery, .section-contact {
     padding: 60px 0;
 }
 
+                        /* seccion sobre nosotros */
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.6;
+    color: #333;
+}
+
+.sobre_nosotros::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 12%;
+    height: 4px;
+    background:linear-gradient(135deg, rgb(249 215 121) 0%, rgb(143 100 14) 100%);
+}
+.img-about {
+    max-height: 420px;
+    object-fit: cover;
+    width: 58%;
+    border-radius: 2%;
+}
+.features-icons i.icon {
+    font-size: 2.5rem;
+    color: #f1d010e6;
+}
+.features-icons h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.features-icons p {
+    font-size: 0.95rem;
+    color: #667;
+}
                     /* seccion nuestras cervezas */
 
 .filter-btn {
-    color: black;
+    color: rgb(44 44 44 / 64%);
+    font-weight: 500;
     width: 90px;
-    transition: 0.5s ease;
+    transition: 0.9s ease;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -148,36 +198,15 @@ h1,h2,h3,h4,h5,h6,
     width: 300%;
     height: 300%;
     border-radius: 20%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: transform 0.8s ease;
+    transition: 0.9s ease;
     z-index: -1;
+}
+.filter-btn:hover {
+    color: rgb(44 44 44 / 64%);
 }
 .filter-btn:hover::before {
     transform: translate(-50%, -50%) scale(1);
-}
-.filter-btn:hover {
-    color: black;
-}
-.filter-btn.all:hover::before {
-    background-color: rgba(255, 255, 255, 0.822);
-}
-.filter-btn.blonde:hover::before {
-    background: linear-gradient(135deg, #e0c52c, #ffeb3b);
-}
-.filter-btn.ipa:hover::before {
-    background: linear-gradient(135deg, #00A878, #00B4D8);
-}
-.filter-btn.stout:hover::before {
-    background: linear-gradient(135deg, #2F4F4F, #000000);
-}
-.filter-btn.red:hover::before {
-    background: linear-gradient(135deg, #830909bb, #ff000d);
-}
-.filter-btn.citric:hover::before {
-    background: linear-gradient(135deg, #ffa844, #f0a927cb);
-}
-.filter-btn.cajon:hover::before {
-    background: linear-gradient(135deg,  #A9A9A9, #808080);
+    background:linear-gradient(135deg, rgb(249 215 121) 0%, rgb(143 100 14) 100%);
 }
 #cervezas::after {
     content: "";
@@ -185,9 +214,9 @@ h1,h2,h3,h4,h5,h6,
     left: 50%;
     bottom: -10px;
     transform: translateX(-50%);
-    width: 8%;
+    width: 16%;
     height: 4px;
-    background-color: #f1d010e6;       
+    background:linear-gradient(135deg, rgb(249 215 121) 0%, rgb(143 100 14) 100%);
 }            
 #beerCards{
     justify-content: center;
@@ -230,7 +259,6 @@ h1,h2,h3,h4,h5,h6,
     font-size: 18px;
     height: 60px;
     margin-bottom: 10px;
-
 }
 .hr-line {
     width: 85%;
@@ -247,44 +275,27 @@ h1,h2,h3,h4,h5,h6,
     transform: translateY(0);
 }
 
-                        /* seccion sobre nosotros */
-
-.about-content {
-    display: flex;
-    justify-content: space-between;
-    line-height: 1.6;
-    color: #333;
-}
-
-.sobre_nosotros::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -10px;
-    transform: translateX(-50%);
-    width: 8%;
-    height: 4px;
-    background-color: #f1d010e6;
-}
-.img-about {
-    max-height: 420px;
+                            /* seccion galeria */
+.gallery-img {
+    height: 400px;
     object-fit: cover;
-    width: 58%;
-    border-radius: 2%;
 }
-.features-icons i.icon {
-    font-size: 2.5rem;
-    color: #f1d010e6;
+.carousel{
+    width: 88%;
 }
-.features-icons h5 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+.section-gallery {
+  margin-top: 40px;
+  padding-bottom: 40px;
 }
-.features-icons p {
-    font-size: 0.95rem;
-    color: #667;
+.carousel-item {
+  transition: transform 0.9s ease;
 }
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+}
+
                             /* Animations */
 
 .section-about h2, .section-beers h2 {

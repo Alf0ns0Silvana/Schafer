@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Heras - Cerveza Artesanal para los amantes del buen sabor.">
-    <link rel="icon" href="./imgs/logoHeras.png" type="image/png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./imgs/logoHeras.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imgs/logoHeras.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="./imgs/logoHeras.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./imgs/logoHeras.png">
+    <!-- Icono para dispositivos Apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <title>Heras</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
@@ -54,12 +59,12 @@
 
     <div class="container-header" id="inicio">
         <section class="header">
-            <div class="row">
+            <div class="row mx-0">
                 <div class="col-12 contenido-header min-vh-100 d-flex align-items-center text-center">
                     <h2 class="slogan text-center mt-5 mb-4 display-1">Cerveza Artesanal para los amantes del buen
                         sabor.</h2>
                     <div class="text-uppercase">
-                        <a href="#cervezas"><span class="btn bg-warning text-dark">Explora Nuestros Sabores</span></a>
+                        <a href="#cervezas"><span class="explore btn text-dark ">Explora Nuestros Sabores</span></a>
                         <a href="#contacto"><span class="btn btn-light">Contactanos</span></a>
                     </div>
                 </div>
@@ -73,8 +78,8 @@
             <section class="section-about">
                 <h2 class="text-center position-relative sobre_nosotros">Sobre Nosotros</h2>
                 <div class="row img-text-about align-items-center">
-                    <div class="col-12 m-4">
-                        <p class="our-history">
+                    <div class="col-12">
+                        <p class="our-history p-3">
                             Nuestra historia comienza con un sueño compartido entre un grupo de amigos apasionados por
                             las juntadas y los buenos momentos. Lo que empezó como una simple idea se ha convertido en
                             un proyecto lleno de amor y dedicación.
@@ -87,30 +92,36 @@
                 </div>
                 <div class="row img-text-about align-items-center mt-5 ">
                     <div class="col-12 col-md-6 order-md-1 mb-4 mb-md-0 d-flex justify-content-center">
-                        <img src="./imgs/herasAbout1.jpg" alt="Características de Producción" class="img-fluid img-about">
+                        <img src="./imgs/aifreepick.jpeg" alt="Características de Producción"
+                            class="img-fluid img-about">
                     </div>
                     <div class="col-12 col-md-6 order-md-2">
                         <div class="row features-icons mb-4">
                             <div class="col-6 col-md-4 text-center">
-                                <i class="bi bi-cup-fill icon"><img src="/imgs/iconoCebada.png" alt="Imagen granos de cebada"></i>
+                                <i class="bi bi-cup-fill icon"><img src="/imgs/iconoCebada.png"
+                                        alt="Imagen granos de cebada"></i>
                                 <h5 class="mt-2">Sabor Único</h5>
                                 <p class="mt-3">Auténtico y refrescante con notas maltosas.</p>
                             </div>
                             <div class="col-6 col-md-4 text-center">
-                                <i class="bi bi-flower1 icon"><img src="/imgs/iconoOlla.png" alt="Imagen olla hirviendo"></i>
+                                <i class="bi bi-flower1 icon"><img src="/imgs/iconoOlla.png"
+                                        alt="Imagen olla hirviendo"></i>
                                 <h5 class="mt-2">Artesanal</h5>
                                 <p class="mt-3">Hecho a mano con ingredientes seleccionados.</p>
                             </div>
                             <div class="col-6 col-md-4 text-center">
-                                <i class="bi bi-glass icon"><img src="/imgs/iconoCompromiso.png" alt="Imagen apretón de manos"></i>
+                                <i class="bi bi-glass icon"><img src="/imgs/iconoCompromiso.png"
+                                        alt="Imagen apretón de manos"></i>
                                 <h5 class="mt-2">Compromiso</h5>
                                 <p class="mt-3">Dedicados a la mejora constante.</p>
                             </div>
                         </div>
                         <p class="about-content">
                             Queremos que Heras sea una cerveza que, además de cumplir con tus expectativas, las supere,
-                            por eso, tu opinión es crucial para nosotros ✨ <br> <br> Estamos en las primeras etapas de nuestro viaje, y 
-                            sabemos que siempre hay espacio para crecer y mejorar. La retroalimentación de nuestros clientes es fundamental
+                            por eso, tu opinión es crucial para nosotros ✨ <br> <br> Estamos en las primeras etapas de
+                            nuestro viaje, y
+                            sabemos que siempre hay espacio para crecer y mejorar. La retroalimentación de nuestros
+                            clientes es fundamental
                             para guiarnos en nuestro camino hacia la perfección.</p>
                     </div>
                 </div>
@@ -129,13 +140,13 @@
 
             <!-- Filtros -->
             <div class="text-center my-4">
-                    <button class="btn filter-btn all" data-filter="all">Todas</button>
-                    <button class="btn filter-btn blonde" data-filter="Blonde">Blonde</button>
-                    <button class="btn filter-btn ipa" data-filter="Ipa">Ipa</button>
-                    <button class="btn filter-btn stout" data-filter="Stout">Stout</button>
-                    <button class="btn filter-btn red" data-filter="Red">Red</button>
-                    <button class="btn filter-btn citric" data-filter="Citric">Citric</button>
-                    <button class="btn filter-btn cajon" data-filter="Cajon">Cajón</button>
+                <button class="btn filter-btn all" data-filter="all">Todas</button>
+                <button class="btn filter-btn blonde" data-filter="Blonde">Blonde</button>
+                <button class="btn filter-btn ipa" data-filter="Ipa">Ipa</button>
+                <button class="btn filter-btn stout" data-filter="Stout">Stout</button>
+                <button class="btn filter-btn red" data-filter="Red">Red</button>
+                <button class="btn filter-btn citric" data-filter="Citric">Citric</button>
+                <button class="btn filter-btn cajon" data-filter="Cajon">Cajón</button>
             </div>
 
             <!-- Cervezas -->
@@ -306,16 +317,73 @@
         </div>
 
         <!-- Galería -->
-        <div class="container-fluid">
-            <section id="galeria" class="section-gallery">
-                <h2 class="text-center">Fotos que nos envían nuestros clientes</h2>
-                <div class="row">
-                    <div class="col-md-4"><img src="./imgs/heras1.jpg" alt="Galería 1" class="img-fluid"></div>
-                    <div class="col-md-4"><img src="./imgs/heras1.jpg" alt="Galería 2" class="img-fluid"></div>
-                    <div class="col-md-4"><img src="./imgs/heras1.jpg" alt="Galería 3" class="img-fluid"></div>
+         
+        <section id="galeria" class="section-gallery">
+            <div class="container-fluid">
+                <h2 class="text-center">Galería</h2>
+                <p>Nos encanta ver cómo disfrutan de nuestras cervezas. Si tienes una foto que quieras compartir, envíala y formará parte de nuestra galería junto a otros amantes de HERAS. <br><br>¡Comparte tu experiencia con nosotros!</p>
+                <div class="d-flex justify-content-center">
+                    <div id="gallery-carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="./imgs/imgsClientes/clients1.png" class="d-block w-100 img-fluid gallery-img" alt="Foto 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeModalImage('./imgs/imgsClientes/clients1.png')">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="./imgs/imgsClientes/clients2.png" class="d-block w-100 img-fluid gallery-img" alt="Foto 2" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeModalImage('./imgs/imgsClientes/clients2.png')">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="./imgs/imgsClientes/clients3.png" class="d-block w-100 img-fluid gallery-img" alt="Foto 3" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeModalImage('./imgs/imgsClientes/clients3.png')">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="./imgs/imgsClientes/clients4.jpg" class="d-block w-100 img-fluid gallery-img" alt="Foto 4" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeModalImage('./imgs/imgsClientes/clients4.jpg')">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="./imgs/imgsClientes/clients5.jpg" class="d-block w-100 img-fluid gallery-img" alt="Foto 5" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeModalImage('./imgs/imgsClientes/clients5.jpg')">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="./imgs/herasAbout.jpg" class="d-block w-100 img-fluid gallery-img" alt="Foto 6" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeModalImage('./imgs/herasAbout.jpg')">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="./imgs/aifreepick.jpeg" class="d-block w-100 img-fluid gallery-img" alt="Foto 7" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeModalImage('./imgs/aifreepick.jpeg')">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="./imgs/aifreepick.jpeg" class="d-block w-100 img-fluid gallery-img" alt="Foto 8" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeModalImage('./imgs/aifreepick.jpeg')">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <button class="carousel-control-prev" type="button" data-bs-target="#gallery-carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#gallery-carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <!-- <div class="modal-content"> -->
+              <!-- <div class="modal-header"> -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <!-- </div> -->
+              <div class="modal-body">
+                <img id="modalImage" src="" class="img-fluid" alt="Imagen ampliada">
+              </div>
+            <!-- </div> -->
+          </div>
+        </div>  
 
         <!-- Ubicación -->
         <div id="ubicacion" class="container-ubicacion-geografica">
