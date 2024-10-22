@@ -1,19 +1,24 @@
-@import url(../css/melodrama.css);
-
-:root{
-    --font-base:"Melodrama", sans-serif;
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 }
+:root{
+    --font-base:"outfit", sans-serif;
+}
+
 body {
-    /* font-family:  var(--font-base); */
+    font-family:  var(--font-base);
     box-sizing: border-box;
     background-color: #e4e4e4a4;
     color: #909597;
     line-height: 1.7;
 }
-h1,h2,h3,h4,h5,h6, 
+/* h1,h2,h3,h4,h5,h6, 
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 600;
-}
+} */
 .h1{
     background: linear-gradient(135deg, rgb(249 215 121) 0%, rgb(143 100 14 / 88%) 100%);
     -webkit-text-fill-color: transparent;
@@ -39,7 +44,6 @@ h1,h2,h3,h4,h5,h6,
     color: #fff;
     font-weight: bold;
 }
-
 .navbar-nav .nav-link {
     font-weight: 500;
     font-size: 1rem;
@@ -57,7 +61,6 @@ h1,h2,h3,h4,h5,h6,
     -webkit-text-fill-color: transparent;
     background-clip: text; 
 }
-
 .navbar-nav .nav-link::after {
     content: '';
     display: block;
@@ -130,7 +133,7 @@ h1,h2,h3,h4,h5,h6,
 .contenido-header a span {
     border: none;
     display: inline-block;
-    width: 250px;
+    width: 253px;
     text-align: center;
     margin: 5px 8px;
 }
@@ -281,7 +284,12 @@ h1,h2,h3,h4,h5,h6,
     position: relative;
     margin-bottom: 20px;
 }
-
+.galeria-HERAS{
+    background: linear-gradient(135deg, rgb(249 215 121) 0%, rgb(143 100 14 / 88%) 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
 .galeria_comunidad::after {
     content: "";
     position: absolute;
@@ -292,9 +300,23 @@ h1,h2,h3,h4,h5,h6,
     height: 4px;
     background: linear-gradient(135deg, rgb(249 215 121) 0%, rgb(143 100 14) 100%);
 }
+.galeria-comunidad-action a{
+    padding: 3px 10px;
+    font-weight: 500;
+    color: #222222b0;
+    border-radius: 3px;
+    background: linear-gradient(135deg, rgb(249 215 121) 0%, rgb(143 100 14) 100%);
+    text-decoration: none;
+}
 .gallery-img {
     height: 400px;
+    border-radius: 5px;
     object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-img:hover {
+    cursor: pointer;
+    transform: scale(1.05); /* Agrandar un poco la imagen */
 }
 .carousel{
     width: 88%;
@@ -315,6 +337,7 @@ h1,h2,h3,h4,h5,h6,
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    opacity: 1;
 }  
 .carousel-control-prev {
     left: -5%;
@@ -335,6 +358,96 @@ h1,h2,h3,h4,h5,h6,
     height: 85vh;
     display: block;
     margin: 0 auto; 
+}
+
+
+                            /* seccion footer */
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.footer-link:hover {
+    background: linear-gradient(135deg, rgb(249 215 121) 0%, rgb(143 100 14 / 88%) 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+}
+.footer-icon {
+    color: #ffffff;
+    gap: 5px;
+    margin-right: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+    background: linear-gradient(135deg, rgb(249 215 121) 0%, rgb(143 100 14 / 88%) 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+}
+
+                            /* modal footer  */
+
+/* Estilos del Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 1% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 7800px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border: 5px solid transparent; /* Borde del Modal */
+    background-clip: padding-box;
+    position: relative;
+}
+.modal-content,h2,p{
+    color: #222222b0;
+}
+.modal-content::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(135deg, rgb(249 215 121) 0%, rgb(143 100 14 / 88%) 100%);
+    z-index: -1;
+    border-radius: 10px;
+}
+.modal-close {
+    background: linear-gradient(135deg, rgb(249 215 121) 0%, rgb(143 100 14 / 88%) 100%);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #222222b0;
+    font-weight: bold;
+}
+.modal-close:hover {
+    background: linear-gradient(135deg, rgba(187, 150, 47, 0.842) 100%, rgb(212, 191, 72) 0%);
+    color: #222222b0;
+}
+.modal h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+.modal ul {
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
                             /* Animations */

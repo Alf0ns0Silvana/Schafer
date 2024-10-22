@@ -14,6 +14,9 @@
     <title>Heras</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -80,7 +83,7 @@
                 <div class="row img-text-about align-items-center">
                     <div class="col-12">
                         <p class="our-history p-3">
-                            Nuestra historia comienza con un sueño compartido entre un grupo de amigos apasionados por
+                            Nuestra historia comienza con un sueño compartido entre 2 familias amigas apasionadas por
                             las juntadas y los buenos momentos. Lo que empezó como una simple idea se ha convertido en
                             un proyecto lleno de amor y dedicación.
                             Creemos que una buena cerveza no es solo una bebida, sino una forma de conectar, disfrutar y
@@ -317,13 +320,17 @@
         </div>
 
         <!-- Galería -->
-
         <section id="galeria" class="section-gallery">
             <div class="container-fluid">
                 <h2 class="text-center galeria_comunidad">Galería</h2>
-                <p>Nos encanta ver cómo disfrutan de nuestras cervezas. Si tienes una foto que quieras compartir,
-                    envíala y formará parte de nuestra galería junto a otros amantes de HERAS. <br><br>¡Comparte tu
-                    experiencia con nosotros!</p>
+                <div class="galeria-comunidad-text text-center">
+                    <p class="mt-3">Si tenés una foto que quieras compartir, enviala y formará parte de nuestra galería
+                        junto a otros
+                        amantes de <span class="galeria-HERAS">HERAS</span><br>Nos encanta ver cómo disfrutan de
+                        nuestras cervezas.
+                    </p>
+                </div>
+
                 <div class="d-flex justify-content-center">
                     <div id="gallery-carousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -384,9 +391,10 @@
                                             onclick="changeModalImage('./imgs/herasAbout.jpg')">
                                     </div>
                                     <div class="col-4">
-                                        <img src="./imgs/herasAbout.jpg" class="d-block w-100 img-fluid gallery-img"
-                                            alt="Foto 6" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                            onclick="changeModalImage('./imgs/herasAbout.jpg')">
+                                        <img src="./imgs/imgsClientes/clients7.jpg"
+                                            class="d-block w-100 img-fluid gallery-img" alt="Foto 7"
+                                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                                            onclick="changeModalImage('./imgs/imgsClientes/clients7.jpg')">
                                     </div>
                                 </div>
                             </div>
@@ -408,6 +416,9 @@
                     </div>
                 </div>
             </div>
+            <div class="d-flex mt-3 px-5 py-3 galeria-comunidad-action justify-content-center">
+                <a href="#"> <i class="fas fa-camera"></i> ¡Compartí tu experiencia!</a>
+            </div>
         </section>
         <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -426,51 +437,132 @@
         <div id="ubicacion" class="container-ubicacion-geografica">
             <div class="container my-4">
                 <h3 class="text-center ubicacion-puntos-venta">Puntos de venta</h3>
-                <p class="text-center">Nos encontrarás en la ciudad de Rosrio, tenemos varios puntos de venta, pero el
+                <p class="text-center">Nos encontrarás en la ciudad de Rosrio, <strong>no tenemos negocio con venta al
+                        público aún</strong>, los puntos de venta son 3 y el
                     radio de envíos está disponible solo cerca de nuestro punto de venta principal (A).</p>
                 <div id="map-container" class="embed-responsive embed-responsive-16by9">
                     <div id="map" class="embed-responsive-item">
-                        <iframe src="https://www.google.com/maps/d/embed?mid=15Lia7mLwH38-O3mJjI9X-HctzWfLrzQ&ehbc=2E312F" width="640" height="450"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/d/embed?mid=15Lia7mLwH38-O3mJjI9X-HctzWfLrzQ&ehbc=2E312F"
+                            width="640" height="450"></iframe>
                     </div>
                     <p>
                         <strong>Puntos de venta:</strong>
-                        <br>1. Ciudad A (con envíos)
-                        <br>2. Ciudad B (sin envíos)
-                        <br>3. Ciudad C (sin envíos)
+                        <br>1. Punto A (con envíos)
+                        <br>2. Punto B (sin envíos)
+                        <br>3. Punto C (sin envíos)
                     </p>
                 </div>
             </div>
         </div>
-
-        <!-- Contacto -->
-        <!-- <div class="container-fluid">
-            <section id="contacto" class="section-contact">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div id="map"></div>
-                    </div>
-                    <div class="col-md-6">
-                        <form action="tu-mail@example.com" method="post">
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" required>
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                            <label for="mensaje">Mensaje:</label>
-                            <textarea id="mensaje" name="mensaje" required></textarea>
-                            <button type="submit">Enviar</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </div> -->
-
     </main>
 
     <!-- Footer -->
-    <div class="container-fluid">
-        <footer class="text-center">
-            <p>&copy; 2024 Derechos reservados de Heras.</p>
-        </footer>
+    <footer class="bg-dark text-light p-4">
+        <div class="container">
+            <div class="row justify-content-between">
+                <!-- Columna 1: Logo y breve descripción -->
+                <div class="col-md-4">
+                    <img class="logo" src="./imgs/logoHeras.png" alt="Logo Heras">
+                    <h1 class="h1 d-inline-block align-middle ms-2">HERAS</h1>
+                    <p class="text-light">
+                        Somos una cervecería artesanal comprometida con la calidad y el sabor auténtico. Nuestro
+                        objetivo es brindar una experiencia única en cada botella.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Enlaces rápidos -->
+                <div class="col-md-2">
+                    <h5>Secciones</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#nosotros" class="footer-link">Sobre Nosotros</a></li>
+                        <li><a href="#cervezas" class="footer-link">Comprar Cervezas</a></li>
+                        <li><a href="#galeria" class="footer-link">Fotos de clientes</a></li>
+                        <li><a href="#ubicacion" class="footer-link">Ver Mapa</a></li>
+                        <li><a href="#" class="footer-link terms">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Redes sociales -->
+                <div class="col-md-3">
+                    <h5>Seguinos en Instagram</h5>
+                    <a href="https://www.instagram.com/heras.cervezaartesanal/" target="_blank" class="footer-icon d-flex align-items-center text-decoration-none"><i class="fab fa-instagram"></i><p class="text-light mb-0">/heras.cervezaartesanal/</p></a>
+                </div>
+            </div>
+
+            <!-- Parte inferior del footer -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <p class="mb-0 text-center text-light">&copy; 2024 Heras Cerveza Artesanal. Todos los derechos reservados.</p>
+                </div>
+                <!-- <div class="col-md-6 text-end">
+                    <a href="#" class="footer-link">Política de Privacidad</a> |
+                    <a href="#" class="footer-link terms">Términos y Condiciones</a>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <h2 class="text-center">Términos y Condiciones</h2>
+            <p>Al realizar una compra en <strong>Heras Cerveza Artesanal</strong>, aceptas los siguientes términos y
+                condiciones. Te invitamos a leer detenidamente para comprender tus derechos y obligaciones como cliente.
+            </p>
+            <h5>1. Restricciones de edad</h5>
+            <p>Debido a la naturaleza de nuestros productos, las compras están restringidas a personas mayores de 18
+                años, conforme a la legislación local. Nos reservamos el derecho de solicitar una identificación válida
+                para verificar la edad antes de realizar la entrega del producto. Si no se puede confirmar la edad, nos
+                reservamos el derecho de cancelar la compra y proceder a la devolución del pago.</p>
+            <h5>2. Calidad del producto</h5>
+            <p>Nuestra cerveza es un producto artesanal que puede variar ligeramente en sabor, aroma y apariencia de un
+                lote a otro, debido a la naturaleza de su proceso de elaboración. Estas variaciones no afectan la
+                calidad del producto, y son parte de la experiencia artesanal.</p>
+            <h5>3. Envíos y entregas</h5>
+            <p>En este momento, los envíos se realizan dentro de las 24 horas posteriores a la confirmación del pedido.
+                Nos esforzamos por hacer entregas el mismo día cuando es posible, o al día siguiente en caso de
+                confirmaciones tardías. La disponibilidad de los envíos puede variar según la ubicación, y cualquier
+                costo adicional será informado en el momento de la compra.</p>
+                <h5>4. Devoluciones</h5>
+                <p>En <strong>Heras Cerveza Artesanal</strong>, aceptamos devoluciones solo en circunstancias específicas para garantizar la calidad de nuestro producto y la satisfacción de nuestros clientes. A continuación, los detalles sobre las políticas de devolución:</p>
+                <ul>
+                    <li>
+                        <strong>Producto dañado o defectuoso al momento de la entrega:</strong> Si el producto llega dañado o con defectos evidentes, el cliente debe notificar el problema dentro de las <strong>48 horas</strong> posteriores a la recepción del pedido para poder gestionar la devolución o el reemplazo del producto. No se aceptarán reclamos fuera de este plazo.
+                    </li>
+                    <li>
+                        <strong>Condiciones de almacenamiento y consumo:</strong> Para preservar las características óptimas de nuestra cerveza artesanal, recomendamos su consumo dentro de los <strong>6 meses</strong> desde la fecha de elaboración. El producto debe almacenarse en un lugar fresco y seco, lejos de fuentes de luz directa y calor, ya que estos factores aceleran el proceso de oxidación y pueden afectar el sabor, aroma y calidad del producto.
+                    </li>
+                    <li>
+                        <strong>Consideraciones sobre conservación:</strong> Si bien nuestras cervezas no contienen conservantes artificiales, esto no implica que el producto se eche a perder rápidamente. Sin embargo, con el paso del tiempo, sus características organolépticas, como el sabor, aroma y frescura, pueden disminuir. Es responsabilidad del cliente asegurar condiciones adecuadas de almacenamiento.
+                    </li>
+                    <li>
+                        <strong>Criterios de devolución para productos abiertos:</strong> En casos excepcionales, aceptaremos devoluciones de productos abiertos si se demuestra que, tras un correcto almacenamiento, la cerveza presenta signos evidentes de deterioro prematuro, como un <strong>sabor agrio</strong> o <strong>aroma desagradable</strong>. Estas devoluciones serán evaluadas caso por caso, y es fundamental que el cliente conserve el producto en su empaque original.
+                    </li>
+                </ul>  
+            <h5>5. Política de privacidad</h5>
+            <p>Nos comprometemos a proteger la privacidad de nuestros clientes. Toda la información personal que
+                recopilemos será utilizada únicamente para procesar pedidos, realizar envíos y procesar pagos. No
+                compartiremos esta información con terceros, salvo en los casos necesarios para completar envíos o
+                procesar pagos.</p>
+            <p>Además, si el cliente aparece en nuestra sección de galería o fotos, es porque nos ha dado explícitamente
+                su consentimiento para utilizar su imagen en nuestro sitio web o redes sociales.</p>
+            <h5>6. Propiedad Intelectual</h5>
+            <p>Todo el contenido de este sitio web, incluidas imágenes, descripciones, gráficos, logotipos, y cualquier
+                otro material relacionado con <strong>Heras Cerveza Artesanal</strong> está protegido por derechos de
+                propiedad intelectual. Queda prohibido el uso, reproducción o distribución de este contenido sin
+                autorización previa por escrito.</p>
+            <h5>7. Responsabilidad del consumidor</h5>
+            <p>Al consumir nuestros productos, el cliente asume toda la responsabilidad por su uso adecuado. El abuso
+                del alcohol puede causar daños graves a la salud y no nos hacemos responsables por el mal uso del
+                producto. Recomendamos disfrutar de nuestras cervezas de manera responsable.</p>
+            <h5>8. Cambios en los Términos y Condiciones</h5>
+            <p>Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento. Los cambios
+                serán publicados en nuestro sitio web, y será responsabilidad del cliente revisarlos antes de realizar
+                una compra.</p>
+            <h5>9. Contacto</h5>
+            <p>Para cualquier duda o consulta relacionada con nuestros Términos y Condiciones, puedes contactarnos en <a
+                    href="mailto:contacto@herascerveza.com">contacto@herascerveza.com</a>.</p>
+            <button class="modal-close">Cerrar</button>
+        </div>
     </div>
 
     <!-- Botón de WhatsApp -->
@@ -480,7 +572,7 @@
     <a href="#" class="back-to-top"><img src="./imgs/flechaBackToTop.png" alt=""></a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <script src="./js/script.js"></script>
 </body>
 

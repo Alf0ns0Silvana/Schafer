@@ -48,3 +48,13 @@ beerCards.forEach(card => {
 function changeModalImage(imageSrc) {
     document.getElementById('modalImage').src = imageSrc;
 }
+
+// Funcion para abrir modal de términos y condiciones 
+document.querySelector('.modal-close').addEventListener('click', function() {
+    document.getElementById('termsModal').style.display = 'none';
+});
+
+document.querySelector('.footer-link.terms').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('termsModal').style.display = 'block';
+});
