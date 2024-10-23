@@ -44,17 +44,27 @@ beerCards.forEach(card => {
     observer.observe(card);
 });
 
-// Función para cambiar la imagen en el modal
+// Función para cambiar la imagen en el modal galeria
 function changeModalImage(imageSrc) {
     document.getElementById('modalImage').src = imageSrc;
 }
 
-// Funcion para abrir modal de términos y condiciones 
-document.querySelector('.modal-close').addEventListener('click', function() {
-    document.getElementById('termsModal').style.display = 'none';
+// Función para cerrar cada modal
+document.querySelectorAll('.modal-close').forEach(function(button) {
+    button.addEventListener('click', function() {
+        const modalId = this.getAttribute('data-target');
+        document.getElementById(modalId).style.display = 'none';
+    });
 });
 
+// Abrir modal de Términos y Condiciones
 document.querySelector('.footer-link.terms').addEventListener('click', function(event) {
     event.preventDefault();
     document.getElementById('termsModal').style.display = 'block';
+});
+
+// Abrir modal de Política de Privacidad
+document.querySelector('.footer-link.politics').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('politicsModal').style.display = 'block';
 });
