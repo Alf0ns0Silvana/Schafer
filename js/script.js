@@ -68,3 +68,21 @@ document.querySelector('.footer-link.politics').addEventListener('click', functi
     event.preventDefault();
     document.getElementById('politicsModal').style.display = 'block';
 });
+
+// Inicializar el mapa en el div con id "map"
+var map = L.map('map').setView([-32.94682, -60.63932], 13); // Coordenadas de Rosario y zoom
+
+// Capa de mosaicos de OpenStreetMap
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+// Añade los marcadores en los puntos de venta
+L.marker([-32.94682, -60.63932]).addTo(map).bindPopup('Punto A (con envíos)').openPopup();
+L.marker([-32.95483, -60.63056]).addTo(map).bindPopup('Punto B (sin envíos)');
+L.marker([-32.94012, -60.65233]).addTo(map).bindPopup('Punto C (sin envíos)');
+
+// Agregar un marcador en Rosario
+L.marker([-32.94682, -60.63932]).addTo(map)
+    .bindPopup('Rosario, Santa Fe, Argentina')
+    .openPopup();
