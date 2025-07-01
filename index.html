@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="SCHÄFER - Cerveza Artesanal para los amantes del buen sabor.">
-    <link rel="icon" type="image/png" sizes="16x16" href="./imgs/logoSchafer.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./imgs/logoSchafer.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="./imgs/logoSchafer.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="./imgs/logoSchafer.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./imgs/logonav.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imgs/logonav.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="./imgs/logonav.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./imgs/logonav.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <title>SCHÄFER</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -17,40 +17,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/newstyle.css">
 </head>
 
 <body>
+    <!-- Hero Section -->
     <nav class="navbar sticky-top navbar-expand-sm custom-navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img class="logo" src="./imgs/imgilustrativa.jpg" alt="Logo Schafer">
+                <img class="logo" src="./imgs/logonav.png" alt="Logo Schafer">
                 <h1 class="h1 d-inline-block align-middle ms-2">Schäfer</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasNavbar">
+            <div class=" hamburger offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasNavbar">
                 <div class="offcanvas-header">
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link" href="#sobre-nosotros">Conocenos</a>
+                            <a class="nav-link" href="#about">Conocenos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#cervezas">Cervezas</a>
+                            <a class="nav-link" href="#gallery">Elaboración</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#galeria">Galería</a>
+                            <a class="nav-link" href="#beers">Cervezas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#ubicacion">Ubicación</a>
+                            <a class="nav-link" href="#location">Ubicación</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto">Contacto</a>
+                            <a class="nav-link" href="#contact">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -58,570 +59,458 @@
         </div>
     </nav>
 
-    <div class="container-header" id="inicio">
-        <section class="header">
-            <div class="row mx-0">
-                <div class="col-12 contenido-header min-vh-100 d-flex align-items-center text-center">
-                    <h2 class="slogan text-center mt-5 mb-4 display-1">Cerveza Artesanal para los amantes del buen
-                        sabor.</h2>
-                    <div class="text-uppercase">
-                        <a href="#cervezas"><span class="explore btn text-dark ">Explora Nuestros Sabores</span></a>
-                        <a href="#contacto"><span class="btn btn-light">Contactanos</span></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <main>
-        <!-- Sobre Nosotros -->
-        <div class="container-fluid mt-5 pb-5" id="sobre-nosotros">
-            <section class="section-about">
-                <h2 class="text-center position-relative sobre_nosotros">Sobre Nosotros</h2>
-                <div class="row img-text-about align-items-center py-4 px-2 mx-2 ">
-                    <div class="col-12">
-                        <p class="our-history p-3">
-                            Nuestra historia comienza con un sueño compartido entre 2 familias amigas apasionadas por
-                            las juntadas y los buenos momentos. Lo que empezó como una simple idea se ha convertido en
-                            un proyecto lleno de amor y dedicación.
-                            Creemos que una buena cerveza no es solo una bebida, sino una forma de conectar, disfrutar y
-                            celebrar los pequeños y grandes momentos de la vida.
-                            <br>Nuestro objetivo es brindarte un producto que refleje el compromiso y el esfuerzo de
-                            cada uno de nosotros.
-                        </p>
-                    </div>
-                </div>
-                <div class="row img-text-about align-items-center mt-5 ">
-                    <div class="col-12 col-md-6 order-md-1 mb-4 mb-md-0 d-flex justify-content-center">
-                        <img src="./imgs/aifreepick.jpeg" alt="Características de Producción"
-                            class="img-fluid img-about">
-                    </div>
-                    <div class="col-12 col-md-6 order-md-2">
-                        <div class="row features-icons mb-4 justify-content-around">
-                            <div class="col-6 col-md-4 text-center">
-                                <i class="bi bi-cup-fill icon"><img src="/imgs/iconoCebada.png"
-                                        alt="Imagen granos de cebada"></i>
-                                <h5 class="mt-2">Sabor Único</h5>
-                                <p class="mt-3">Auténtico y refrescante con notas maltosas.</p>
-                            </div>
-                            <div class="col-6 col-md-4 text-center">
-                                <i class="bi bi-flower1 icon"><img src="/imgs/iconoOlla.png"
-                                        alt="Imagen olla hirviendo"></i>
-                                <h5 class="mt-2">Artesanal</h5>
-                                <p class="mt-3">Hecho a mano con ingredientes seleccionados.</p>
-                            </div>
-                            <div class="col-6 col-md-4 text-center">
-                                <i class="bi bi-glass icon"><img src="/imgs/iconoCompromiso.png"
-                                        alt="Imagen apretón de manos"></i>
-                                <h5 class="mt-2">Compromiso</h5>
-                                <p class="mt-3">Dedicados a la mejora constante.</p>
-                            </div>
-                        </div>
-                        <p class="about-content">
-                            Queremos que Schäfer sea una cerveza que, además de cumplir con tus expectativas, las supere,
-                            por eso, tu opinión es crucial para nosotros ✨ <br> <br> Estamos en las primeras etapas de
-                            nuestro viaje, y
-                            sabemos que siempre hay espacio para crecer y mejorar. La retroalimentación de nuestros
-                            clientes es fundamental
-                            para guiarnos en nuestro camino hacia la perfección.</p>
-                    </div>
-                </div>
-                <!-- <div class="text-center mt-5">
-                    <p class="about-content">
-                        Estamos emocionados de compartir este viaje contigo y de brindarte una cerveza que, más allá de
-                        su auténtico sabor, lleva consigo una historia de dedicación y amor.
-                    </p>
-                </div> -->
-            </section>
-        </div>
-
-        <!-- Nuestras cervezas -->
-        <div class="container mt-5 section-beers">
-            <h2 class="text-center" id="cervezas">Nuestras Cervezas</h2>
-            <p class="py-4 px-2 mx-2 text-center">Explora nuestra selección de cervezas artesanales: desde refrescantes estilos cítricos hasta
-                sabores intensos, contamos con una opción para cada preferencia. <br> <br> Descubre en detalle cada una de ellas a continuación</p>
-            <!-- Filtros -->
-            <div class="text-center my-4">
-                <button class="btn filter-btn my-1 all selected" data-filter="all">Todas</button>
-                <button class="btn filter-btn my-1 blonde" data-filter="Blonde">Blonde</button>
-                <button class="btn filter-btn my-1 ipa" data-filter="Ipa">Ipa</button>
-                <button class="btn filter-btn my-1 stout" data-filter="Stout">Stout</button>
-                <button class="btn filter-btn my-1 red" data-filter="Red">Red</button>
-                <button class="btn filter-btn my-1 citric" data-filter="Citric">Citric</button>
-                <button class="btn filter-btn my-1 cajon" data-filter="Cajon">Cajón</button>
-            </div>
-
-            <!-- Cervezas -->
-            <div class="row" id="beerCards">
-                <!-- Blonde -->
-                <div class="col-12 col-md-6 col-lg-4 beer-card Blonde">
-                    <div class="card-section card-section rounded shadow">
-                        <div class="card-header card-header text-center rounded-top"
-                            style="background: linear-gradient(135deg, #e0c52c, #ffeb3bbd);">
-                            <h2 class="card-header-title mb-3 text-white">BLONDE</h2>
-                            <img src="./imgs/imgilustrativa.jpg" class="card-img-top" alt="Foto cerveza blonde">
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="card-text mt-3">Cerveza rubia fresca y suave.</p>
-                            <hr class="hr-line mb-2">
-                            <div class="icon-container d-flex justify-content-center align-items-center flex-column mb-2">
-                                <span class="icon-circle mx-2 my-1">
-                                    <a href="#map" class="btn-gradient">
-                                        <i class="fas fa-map-marker-alt"></i> Puntos de venta minorista
-                                    </a>
-                                </span>
-                                <span class="icon-circle mx-2 my-1">
-                                    <a href="https://wa.me/3412290622?text=Quiero%20pedir%20un%20Cajón..." target="_blank" class="btn-gradient">
-                                        <i class="fab fa-whatsapp"></i> Consultas mayorista
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- IPA -->
-                <div class="col-12 col-md-6 col-lg-4 beer-card Ipa">
-                    <div class="card-section card-section rounded shadow">
-                        <div class="card-header card-header text-center rounded-top"
-                            style="background: linear-gradient(135deg, #00A878, #00B4D8);">
-                            <h2 class="card-header-title mb-3 text-white">IPA</h2>
-                            <img src="./imgs/heras1.jpg" class="card-img-top" alt="Foto cerveza Ipa">
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="card-text mt-3">Cerveza con aroma cítrico y amargor pronunciado.</p>
-                            <hr class="hr-line mb-2">
-                            <div class="icon-container d-flex justify-content-center align-items-center flex-column mb-2">
-                                <span class="icon-circle mx-2 my-1">
-                                    <a href="#map" class="btn-gradient">
-                                        <i class="fas fa-map-marker-alt"></i> Puntos de venta minorista
-                                    </a>
-                                </span>
-                                <span class="icon-circle mx-2 my-1">
-                                    <a href="https://wa.me/3412290622?text=Quiero%20pedir%20un%20Cajón..." target="_blank" class="btn-gradient">
-                                        <i class="fab fa-whatsapp"></i> Consultas mayorista
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Stout -->
-                <div class="col-12 col-md-6 col-lg-4 beer-card Stout">
-                    <div class="card-section card-section rounded shadow">
-                        <div class="card-header card-header text-center rounded-top"
-                            style="background: linear-gradient(135deg, #2F4F4F, #000000);">
-                            <h2 class="card-header-title mb-3 text-white">STOUT</h2>
-                            <img src="./imgs/heras1.jpg" class="card-img-top" alt="Foto cerveza Stout">
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="card-text mt-3">Cerveza oscura con notas de café y chocolate.</p>
-                            <hr class="hr-line mb-2">
-                            <div class="icon-container d-flex justify-content-center align-items-center flex-column mb-2">
-                                <span class="icon-circle mx-2 my-1">
-                                    <a href="#map" class="btn-gradient">
-                                        <i class="fas fa-map-marker-alt"></i> Puntos de venta minorista
-                                    </a>
-                                </span>
-                                <span class="icon-circle mx-2 my-1">
-                                    <a href="https://wa.me/3412290622?text=Quiero%20pedir%20un%20Cajón..." target="_blank" class="btn-gradient">
-                                        <i class="fab fa-whatsapp"></i> Consultas mayorista
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Red -->
-                <div class="col-12 col-md-6 col-lg-4 beer-card Red">
-                    <div class="card-section card-section rounded shadow">
-                        <div class="card-header card-header text-center rounded-top"
-                            style="background: linear-gradient(135deg, #830909bb, #ff000d);">
-                            <h2 class="card-header-title mb-3 text-white">RED</h2>
-                            <img src="./imgs/heras1.jpg" class="card-img-top" alt="Foto cerveza Red">
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="card-text mt-3">Cerveza rojiza con sabor caramelizado.</p>
-                            <hr class="hr-line mb-2">
-                            <div class="icon-container d-flex justify-content-center align-items-center flex-column mb-2">
-                                <span class="icon-circle mx-2 my-1">
-                                    <a href="#map" class="btn-gradient">
-                                        <i class="fas fa-map-marker-alt"></i> Puntos de venta minorista
-                                    </a>
-                                </span>
-                                <span class="icon-circle mx-2 my-1">
-                                    <a href="https://wa.me/3412290622?text=Quiero%20pedir%20un%20Cajón..." target="_blank" class="btn-gradient">
-                                        <i class="fab fa-whatsapp"></i> Consultas mayorista
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Citric -->
-                <div class="col-12 col-md-6 col-lg-4 beer-card Citric">
-                    <div class="card-section card-section rounded shadow">
-                        <div class="card-header card-header text-center rounded-top"
-                            style="background: linear-gradient(135deg, #ffa844, #f0a927cb);">
-                            <h2 class="card-header-title mb-3 text-white">CITRIC</h2>
-                            <img src="./imgs/heras1.jpg" class="card-img-top" alt="Foto cerveza cítrica">
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="card-text mt-3">Cerveza con toques cítricos y refrescantes.</p>
-                            <hr class="hr-line mb-2">
-                            <div class="icon-container d-flex justify-content-center align-items-center flex-column mb-2">
-                                <span class="icon-circle mx-2 my-1">
-                                    <a href="#map" class="btn-gradient">
-                                        <i class="fas fa-map-marker-alt"></i> Puntos de venta minorista
-                                    </a>
-                                </span>
-                                <span class="icon-circle mx-2 my-1">
-                                    <a href="https://wa.me/3412290622?text=Quiero%20pedir%20un%20Cajón..." target="_blank" class="btn-gradient">
-                                        <i class="fab fa-whatsapp"></i> Consultas mayorista
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 6: Cajón -->
-                <div class="col-12 col-md-6 col-lg-4 beer-card Cajon">
-                    <div class="card-section card-section rounded shadow">
-                        <div class="card-header card-header text-center rounded-top"
-                            style="background: linear-gradient(135deg,  #A9A9A9, #808080);">
-                            <h2 class="card-header-title mb-3 text-white">CAJÓN</h2>
-                            <img src="./imgs/heras1.jpg" class="card-img-top" alt="Cajón Beer">
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="card-text mt-3">12 botellas de litro, cualquier tipo.</p>
-                            <hr class="hr-line mb-2">
-                            <div class="icon-container d-flex justify-content-center align-items-center flex-column mb-2">
-                                <span class="icon-circle mx-2 my-1">
-                                    <a href="#map" class="btn-gradient">
-                                        <i class="fas fa-map-marker-alt"></i> Puntos de venta minorista
-                                    </a>
-                                </span>
-                                <span class="icon-circle mx-2 my-1">
-                                    <a href="https://wa.me/3412290622?text=Quiero%20pedir%20un%20Cajón..." target="_blank" class="btn-gradient">
-                                        <i class="fab fa-whatsapp"></i> Consultas mayorista
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Galería -->
-        <section id="galeria" class="section-gallery">
-            <div class="container-fluid">
-                <h2 class="text-center galeria_comunidad">Galería</h2>
-                <div class="galeria-comunidad-text text-center">
-                    <p class="py-4 px-2 mx-2 text-center">Si tenés una foto que quieras compartir, enviala y formará parte de nuestra galería
-                        junto a otros
-                        amantes de <span class="galeria-SCHAFER">SCHÄFER</span><br>Nos encanta ver cómo disfrutan de
-                        nuestras cervezas.
-                    </p>
-                </div>
-
-                <div class="d-flex justify-content-center">
-                    <div id="gallery-carousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="./imgs/imgsClientes/clients1.png"
-                                            class="d-block w-100 img-fluid gallery-img" alt="Foto 1"
-                                            data-bs-toggle="modal" data-bs-target="#imageModal"
-                                            onclick="changeModalImage('./imgs/imgsClientes/clients1.png')">
-                                    </div>
-                                    <div class="col-4">
-                                        <img src="./imgs/imgsClientes/clients2.png"
-                                            class="d-block w-100 img-fluid gallery-img" alt="Foto 2"
-                                            data-bs-toggle="modal" data-bs-target="#imageModal"
-                                            onclick="changeModalImage('./imgs/imgsClientes/clients2.png')">
-                                    </div>
-                                    <div class="col-4">
-                                        <img src="./imgs/imgsClientes/clients3.png"
-                                            class="d-block w-100 img-fluid gallery-img" alt="Foto 3"
-                                            data-bs-toggle="modal" data-bs-target="#imageModal"
-                                            onclick="changeModalImage('./imgs/imgsClientes/clients3.png')">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="./imgs/imgsClientes/clients4.jpg"
-                                            class="d-block w-100 img-fluid gallery-img" alt="Foto 4"
-                                            data-bs-toggle="modal" data-bs-target="#imageModal"
-                                            onclick="changeModalImage('./imgs/imgsClientes/clients4.jpg')">
-                                    </div>
-                                    <div class="col-4">
-                                        <img src="./imgs/imgsClientes/clients6.jpg"
-                                            class="d-block w-100 img-fluid gallery-img" alt="Foto 7"
-                                            data-bs-toggle="modal" data-bs-target="#imageModal"
-                                            onclick="changeModalImage('./imgs/imgsClientes/clients6.jpg')">
-                                    </div>
-                                    <div class="col-4">
-                                        <img src="./imgs/aifreepick.jpeg" class="d-block w-100 img-fluid gallery-img"
-                                            alt="Foto 8" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                            onclick="changeModalImage('./imgs/aifreepick.jpeg')">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="./imgs/imgsClientes/clients5.jpg"
-                                            class="d-block w-100 img-fluid gallery-img" alt="Foto 5"
-                                            data-bs-toggle="modal" data-bs-target="#imageModal"
-                                            onclick="changeModalImage('./imgs/imgsClientes/clients5.jpg')">
-                                    </div>
-                                    <div class="col-4">
-                                        <img src="./imgs/herasAbout.jpg" class="d-block w-100 img-fluid gallery-img"
-                                            alt="Foto 6" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                            onclick="changeModalImage('./imgs/herasAbout.jpg')">
-                                    </div>
-                                    <div class="col-4">
-                                        <img src="./imgs/imgsClientes/clients7.jpg"
-                                            class="d-block w-100 img-fluid gallery-img" alt="Foto 7"
-                                            data-bs-toggle="modal" data-bs-target="#imageModal"
-                                            onclick="changeModalImage('./imgs/imgsClientes/clients7.jpg')">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#gallery-carousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"><img src="./imgs/arrow-left.png"
-                                    alt="Desliza hacia la izquierda"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-
-                        <button class="carousel-control-next" type="button" data-bs-target="#gallery-carousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"><img
-                                    src="./imgs/arrow-right.png" alt="Desliza hacia la derecha"></span>
-                            <span class="visually-hidden">Siguiente</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex mt-3 px-5 py-3 galeria-comunidad-action justify-content-center">
-                <a href="#"> <i class="fas fa-camera"></i> ¡Compartí tu experiencia!</a>
-            </div>
-        </section>
-        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <!-- <div class="modal-content"> -->
-                <!-- <div class="modal-header"> -->
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <!-- </div> -->
-                <div class="modal-body">
-                    <img id="modalImage" src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==" class="img-fluid"
-                        alt="Imagen ampliada">
-                </div>
-                <!-- </div> -->
-            </div>
-        </div>
-
-        <!-- Ubicación -->
-        <div id="ubicacion" class="container-ubicacion-geografica my-5">
-            <h3 class="text-center ubicacion-puntos-venta">Ubicación</h3>
-            <p class="py-4 px-2 mx-2 text-center">
-                Nos encontrarás en la ciudad de Rosario, <strong>no tenemos negocio con venta al público aún</strong>,
-                pero tenemos 3 puntos de venta, 2 en Rosario y 1 en Arroyo seco, para visualizar este último deberás alejar un
-                poco el zoom dentro del mapa.
-            </p>
-            <div class="container my-4">
-                <div id="map"></div>
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="text-light pt-4">
-        <div class="container">
-            <div class="row justify-content-between">
-                <!-- Columna 1 -->
-                <div class="col-md-4">
-                    <div class="footer-col-1 d-flex align-items-center flex-column">
-                        <img class="logo" src="./imgs/logoSchafer.png" alt="Logo Schafer">
-                        <h2 class="h1 d-inline-block align-middle ms-2">SCHÄFER</h2>
-                        <p class="text-light text-center">
-                            Somos una cervecería artesanal comprometida con la calidad. Nuestro objetivo es brindarte lo
-                            mejor en cada botella, para que disfrutes de un sabor auténtico y una experiencia única.
-                        </p>
-                    </div>
-                </div>
-                <!-- Columna 2 -->
-                <div class="col-md-2">
-                    <div class="footer-col-2 d-flex align-items-center flex-column">
-                        <h5>Secciones</h5>
-                        <ul class="list-unstyled text-center">
-                            <li class="py-1"><a href="#sobre-nosotros" class="footer-link">Sobre nosotros</a></li>
-                            <li class="py-1"><a href="#cervezas" class="footer-link">Comprar cervezas</a></li>
-                            <li class="py-1"><a href="#galeria" class="footer-link">Fotos de clientes</a></li>
-                            <li class="py-1"><a href="#ubicacion" class="footer-link">Ver mapa</a></li>
-                            <li class="py-1"><a href="#" class="footer-link terms">Términos y condiciones</a></li>
-                            <li class="py-1"><a href="#" class="footer-link politics">Políticas de privacidad</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Columna 3 -->
-                <div class="col-md-3 d-flex flex-column">
-                    <div class="footer-col-3 d-flex align-items-center flex-column">
-                        <h5>Seguinos en Instagram</h5>
-                        <a href="https://www.instagram.com/schafer.cervezaartesanal/" target="_blank"
-                            class="footer-icon d-flex align-items-center flex-row text-decoration-none"><i
-                                class="fab fa-instagram"></i>
-                            <p class="text-light mb-0">/schafer.cervezaartesanal/</p>
-                        </a>
-                    </div>
-                    <div id="contacto" class="d-flex align-items-center flex-column">
-                        <h5>Contactanos</h5>
-                        <a href="https://wa.me/3412290622" target="_blank"
-                            class="footer-icon d-flex align-items-center flex-row text-decoration-none text-light mb-0"><i
-                                class="fab fa-whatsapp"></i>Whatsapp</a>
-                        <a href="mailto:contacto@schafercerveza.com"
-                            class="footer-icon d-flex align-items-center flex-row text-decoration-none text-light mb-0"><i
-                                class="fas fa-envelope"></i>contacto@schafercerveza.com</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Parte inferior del footer -->
-            <hr class="m-0">
-            <div class="row">
-                <div class="col-12">
-                    <p class="mb-1 text-center text-light mt-1 fw-light">&copy; 2024 Schäfer Cerveza Artesanal. Todos los
-                        derechos reservados.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- modal terminos/condiciones  -->
-    <div id="termsModal" class="modal">
-        <div class="modal-content">
-            <h2 class="text-center">Términos y Condiciones</h2>
-            <p>Al realizar una compra en <strong>Schäfer Cerveza Artesanal</strong>, aceptas los siguientes términos y
-                condiciones. Te invitamos a leer detenidamente para comprender tus derechos y obligaciones como cliente.
-            </p>
-            <h5>1. Restricciones de edad</h5>
-            <p>Debido a la naturaleza de nuestros productos, las compras están restringidas a personas mayores de 18
-                años, conforme a la legislación local. Nos reservamos el derecho de solicitar una identificación válida
-                para verificar la edad antes de realizar la entrega del producto. Si no se puede confirmar la edad, nos
-                reservamos el derecho de cancelar la compra y proceder a la devolución del pago.</p>
-            <h5>2. Calidad del producto</h5>
-            <p>Nuestra cerveza es un producto artesanal que puede variar ligeramente en sabor, aroma y apariencia de un
-                lote a otro, debido a la naturaleza de su proceso de elaboración. Estas variaciones no afectan la
-                calidad del producto, y son parte de la experiencia artesanal.</p>
-            <h5>3. Envíos y entregas</h5>
-            <p>En este momento, los envíos se realizan dentro de las 24 horas posteriores a la confirmación del pedido.
-                Nos esforzamos por hacer entregas el mismo día cuando es posible, o al día siguiente en caso de
-                confirmaciones tardías. La disponibilidad de los envíos puede variar según la ubicación, y cualquier
-                costo adicional será informado en el momento de la compra.</p>
-            <h5>4. Devoluciones</h5>
-            <p>En <strong>Schäfer Cerveza Artesanal</strong>, aceptamos devoluciones solo en circunstancias específicas
-                para garantizar la calidad de nuestro producto y la satisfacción de nuestros clientes. A continuación,
-                los detalles sobre las políticas de devolución:</p>
-            <ul>
-                <li><strong>Producto dañado o defectuoso al momento de la entrega:</strong> Si el producto llega dañado
-                    o con defectos evidentes, el cliente debe notificar el problema dentro de las <strong>48
-                        horas</strong> posteriores a la recepción del pedido para poder gestionar la devolución o el
-                    reemplazo del producto. No se aceptarán reclamos fuera de este plazo.</li>
-                <li><strong>Condiciones de almacenamiento y consumo:</strong> Para preservar las características óptimas
-                    de nuestra cerveza artesanal, recomendamos su consumo dentro de los <strong>6 meses</strong> desde
-                    la fecha de elaboración. El producto debe almacenarse en un lugar fresco y seco, lejos de fuentes de
-                    luz directa y calor, ya que estos factores aceleran el proceso de oxidación y pueden afectar el
-                    sabor, aroma y calidad del producto.</li>
-                <li><strong>Consideraciones sobre conservación:</strong> Si bien nuestras cervezas no contienen
-                    conservantes artificiales, esto no implica que el producto se eche a perder rápidamente. Sin
-                    embargo, con el paso del tiempo, sus características organolépticas, como el sabor, aroma y
-                    frescura, pueden disminuir. Es responsabilidad del cliente asegurar condiciones adecuadas de
-                    almacenamiento.</li>
-                <li><strong>Criterios de devolución para productos abiertos:</strong> En casos excepcionales,
-                    aceptaremos devoluciones de productos abiertos si se demuestra que, tras un correcto almacenamiento,
-                    la cerveza presenta signos evidentes de deterioro prematuro, como un <strong>sabor agrio</strong> o
-                    <strong>aroma desagradable</strong>. Estas devoluciones serán evaluadas caso por caso, y es
-                    fundamental que el cliente conserve el producto en su empaque original.
-                </li>
-            </ul>
-            <h5>5. Política de privacidad</h5>
-            <p>Nos comprometemos a proteger la privacidad de nuestros clientes. Toda la información personal que
-                recopilemos será utilizada únicamente para procesar pedidos, realizar envíos y procesar pagos. No
-                compartiremos esta información con terceros, salvo en los casos necesarios para completar envíos o
-                procesar pagos.</p>
-            <p>Además, si el cliente aparece en nuestra sección de galería o fotos, es porque nos ha dado explícitamente
-                su consentimiento para utilizar su imagen en nuestro sitio web o redes sociales.</p>
-            <h5>6. Propiedad Intelectual</h5>
-            <p>Todo el contenido de este sitio web, incluidas imágenes, descripciones, gráficos, logotipos, y cualquier
-                otro material relacionado con <strong>Schäfer Cerveza Artesanal</strong> está protegido por derechos de
-                propiedad intelectual. Queda prohibido el uso, reproducción o distribución de este contenido sin
-                autorización previa por escrito.</p>
-            <h5>7. Responsabilidad del consumidor</h5>
-            <p>Al consumir nuestros productos, el cliente asume toda la responsabilidad por su uso adecuado. El abuso
-                del alcohol puede causar daños graves a la salud y no nos hacemos responsables por el mal uso del
-                producto. Recomendamos disfrutar de nuestras cervezas de manera responsable.</p>
-            <h5>8. Cambios en los Términos y Condiciones</h5>
-            <p>Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento. Los cambios
-                serán publicados en nuestro sitio web, y será responsabilidad del cliente revisarlos antes de realizar
-                una compra.</p>
-            <h5>9. Contacto</h5>
-            <p>Para cualquier duda o consulta relacionada con nuestros Términos y Condiciones, puedes contactarnos en <a
-                    href="mailto:contacto@schafercerveza.com">contacto@schafercerveza.com</a>.</p>
-            <button class="modal-close" data-target="termsModal">Cerrar</button>
+<section class="hero" id="home">
+    <div class="container hero-content">
+        <p>100 % artesanal</p>
+        <div class="hero-btns">
+            <a href="#beers" class="btn">Conocé nuestras cervezas</a>
+            <!-- <a href="#contact" class="btn btn-outline">Contactanos</a> -->
         </div>
     </div>
+</section>
 
-    <!-- modal politicas de privacidad  -->
-    <div id="politicsModal" class="modal">
-        <div class="modal-content">
-            <h2 class="text-center">Política de Privacidad</h2>
-            <p>En <strong>Schäfer Cerveza Artesanal</strong>, nos comprometemos a proteger la privacidad de nuestros
-                clientes y usuarios. A continuación, explicamos cómo recopilamos, usamos y protegemos tu información
-                personal:</p>
-            <h5>1. Recopilación de Información</h5>
-            <p>Recopilamos información personal como nombre, dirección, correo electrónico, número de teléfono, y
-                detalles de pago al realizar una compra en nuestro sitio web. Esta información es utilizada para
-                procesar tu pedido, coordinar la entrega, y mejorar tu experiencia en nuestra plataforma.</p>
-            <h5>2. Uso de Datos</h5>
-            <p>Los datos personales que recopilamos serán utilizados exclusivamente para los siguientes propósitos:</p>
-            <ul>
-                <li>Procesar y completar tu compra.</li>
-                <li>Gestionar los envíos y entregas de los productos.</li>
-                <li>Contactarte en caso de problemas o consultas relacionadas con tu pedido.</li>
-                <li>Mejorar nuestros servicios y personalizar tu experiencia en nuestro sitio web.</li>
-            </ul>
-            <h5>3. Sección de Galería</h5>
-            <p>En algunos casos, con el consentimiento explícito de nuestros clientes, podremos utilizar fotografías o
-                imágenes relacionadas con eventos o actividades en las que hayan participado, para ser publicadas en la
-                sección de "Galería" de nuestro sitio web. Nos aseguramos de obtener tu autorización antes de publicar
-                cualquier imagen en la que aparezcas.</p>
-            <h5>4. Protección de los Datos</h5>
-            <p>Nos esforzamos por proteger la información personal de nuestros clientes a través de medidas de seguridad
-                adecuadas. No compartimos, vendemos ni cedemos tus datos a terceros, salvo en los casos estrictamente
-                necesarios para el procesamiento de pagos o envíos.</p>
-            <h5>5. Derechos del Usuario</h5>
-            <p>Como cliente, tienes el derecho de acceder, modificar o eliminar tus datos personales en cualquier
-                momento. Si deseas ejercer alguno de estos derechos, o tienes dudas sobre el manejo de tus datos, puedes
-                contactarnos en <a href="mailto:contacto@schafercerveza.com">contacto@schafercerveza.com</a>.</p>
-            <button class="modal-close" data-target="politicsModal">Cerrar</button>
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="container about-container">
+        <div class="about-img">
+            <img src="./imgs/newabout.jpg" alt="Imagen representa origen">
+        </div>
+        <div class="about-content">
+            <h2>Sobre nosotros</h2>
+            <p>Somos una familia que decidió transformar una tradición compartida en una pasión cervecera. <br> El nombre "Schäfer", es alemán, significa "pastor" y refleja nuestra filosofía de trabajo, así como el pastor conoce a cada integrante de su rebaño, lo acompaña y cuida, nosotros guiamos cada paso del proceso con la misma dedicación.</p>
+            <p>Nuestra cerveza se produce en lotes controlados, respetando los tiempos naturales de fermentación y maduración. Cada etapa, desde la selección de ingredientes hasta el embotellado, se supervisa con precisión, cada lote es el resultado de una búsqueda constante por mejorar y cada botella representa un proceso íntegramente artesanal, lo que nos permite ofrecer un producto de calidad.</p>
+            <p><strong>Valoramos lo artesanal porque creemos en lo auténtico, en lo hecho a mano, en lo que lleva historia y esfuerzo. </strong></p>
+            <p>Estamos creciendo paso a paso, y sabemos que siempre hay espacio para mejorar.
+                Queremos que Schäfer no solo cumpla con tus expectativas, sino que las supere. Por eso, tu opinión es crucial para nosotros.</p>
+            <a href="#beers" class="btn">Explorar</a>
         </div>
     </div>
+</section>
+
+<!-- Gallery Section -->
+
+<section class="gallery" id="gallery">
+    <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+    <div class="container">
+        <h2>Proceso Artesanal</h2>
+            <p>Elaborar una buena cerveza lleva tiempo y atención, por eso cuidamos cada paso del proceso artesanal: seleccionamos ingredientes de calidad, respetamos los tiempos naturales de fermentación y trabajamos con técnicas precisas.</p>       
+        <!-- Video Showcase -->
+        <div class="video-showcase">
+            <div class="video-content">
+                <h3>Creando Schäfer</h3>
+                <p>Te invitamos a conocer nuestro proceso de elaboración artesanal. En este video podrás ver cómo transformamos los mejores ingredientes en una cerveza que no falla.</p>
+                <p>Desde la selección de la malta hasta el embotellado final, mantenemos la tradición cervecera con técnicas que garantizan la máxima calidad.</p>
+                <p>Queremos que seas parte de esa experiencia desde el primer momento.</p>
+            </div>
+            <div class="video-container">
+                <video controls muted>
+                    <source src="data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAAIZnJlZQAACKBtZGF0AAAC" type="video/mp4">
+                    Su navegador no soporta el elemento de video.
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+        </div>
+        
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <div class="gallery-row">
+                <div class="gallery-image">
+                    <img src="./imgs/imgs-gallery/IMG_20250203_103321192_HDR.jpg" alt="">
+                </div>
+                <div class="gallery-text">
+                    <h4>Selección de Ingredientes</h4>
+                    <p>Comenzamos con la selección cuidadosa de maltas, levaduras especiales y lúpulos aromáticos. <br> Cada ingrediente es elegido por su capacidad de aportar características únicas a nuestras cervezas, creando perfiles de sabor complejos y equilibrados.</p>
+                </div>
+            </div>
+            
+            <div class="gallery-row">
+                <div class="gallery-image">
+                    <img src="./imgs/imgs-gallery/IMG_20240417_163659029_MFNR.jpg" alt="">
+
+                </div>
+                <div class="gallery-text">
+                    <h4>Macerado y Cocción</h4>
+                    <p>Controlamos cuidadosamente la temperatura y los tiempos para extraer los azúcares de la malta. <br> Durante la cocción, agregamos los lúpulos en momentos precisos para lograr el equilibrio perfecto entre amargor, aroma y sabor.</p>
+                </div>
+            </div>
+            
+            <div class="gallery-row">
+                <div class="gallery-image">
+                    <img src="./imgs/imgs-gallery/IMG_20250203_103321192_HDR.jpg" alt="">
+                </div>
+                <div class="gallery-text">
+                    <h4>Fermentación</h4>
+                    <p>Nuestras levaduras seleccionadas trabajan en condiciones controladas de temperatura y tiempo, transformando los azúcares en alcohol. <br> Este proceso, que puede durar varias semanas, es monitoreado constantemente para asegurar que cada lote desarrolle los sabores y aromas característicos de Schäfer.</p>
+                </div>
+            </div>
+
+            <div class="gallery-row">
+                <div class="gallery-image">
+                    <img src="./imgs/imgs-gallery/IMG_20250203_103321192_HDR.jpg" alt="">
+                </div>
+                <div class="gallery-text">
+                    <h4>Maduración</h4>
+                        <p>Durante la maduración, se asientan sabores, se suavizan notas y se termina de definir el carácter de cada estilo. <br> No apuramos esta etapa: dejamos que el frío haga su trabajo, porque una buena cerveza también necesita paciencia.</p>
+                </div>
+            </div>
+            
+            <div class="gallery-row">
+                <div class="gallery-image">
+                    <img src="./imgs/imgs-gallery/IMG_20250203_103321192_HDR.jpg" alt="">
+                </div>
+                <div class="gallery-text">
+                    <h4>Embotellado</h4>
+                    <p>Cada botella es llenada con precisión, manteniendo las condiciones ideales para preservar la frescura y calidad de la cerveza. <br> Nuestro proceso de embotellado garantiza que cada botella que llega a tus manos contenga la misma pasión y dedicación con la que fue creada desde el primer día.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Beers Section -->
+<section class="beers" id="beers">
+    <div class="container">
+        <h2>Nuestras cervezas</h2>
+        <p>Schäfer es una cerveza pensada para acompañar reuniones, celebraciones, una buena comida o... simplemente disfrutar de un buen momento.</p>
+        <p class="p-section-beers">Explorá nuestra selección de cervezas artesanales! </p>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Todas</button>
+            <button class="filter-btn" data-filter="blonde">Blonde</button>
+            <button class="filter-btn" data-filter="red">Red</button>
+            <button class="filter-btn" data-filter="ipa">IPA</button>
+            <button class="filter-btn" data-filter="stout">Stout</button>
+            <button class="filter-btn" data-filter="box">Cajón</button>
+        </div>
+        
+        <div class="beer-cards">
+            <div class="beer-card" data-category="blonde">
+                <img src="./imgs/img-gustos/blonde.jpg" class="beer-img" alt="foto cerveza rubia">
+                <div class="beer-info">
+                    <h3>Blonde Ale</h3>
+                    <p>Cerveza rubia de cuerpo ligero con notas frutales y final refrescante. Perfecta para cualquier ocasión.</p>
+                    <a href="https://wa.me/1234567890" class="btn"><i class="fab fa-whatsapp"></i> Consultar</a>
+                </div>
+            </div>
+            
+            <div class="beer-card" data-category="red">
+                <img src="./imgs/img-gustos/red2.jpg" class="beer-img" alt="foto cerveza roja">
+                <div class="beer-info">
+                    <h3>Irish Red</h3>
+                    <p>Cerveza de color ámbar rojizo con notas de caramelo y un equilibrio perfecto entre malta y lúpulo.</p>
+                    <a href="https://wa.me/1234567890" class="btn"><i class="fab fa-whatsapp"></i> Consultar</a>
+                </div>
+            </div>
+            
+            <div class="beer-card" data-category="ipa">
+                <img src="./imgs/img-gustos/ipa3.jpg" class="beer-img" alt="foto cerveza ipa">
+                <div class="beer-info">
+                    <h3>IPA</h3>
+                    <p>Cerveza con intenso aroma a lúpulo, notas cítricas y un amargor característico que la hace única.</p>
+                    <a href="https://wa.me/1234567890" class="btn"><i class="fab fa-whatsapp"></i> Consultar</a>
+                </div>
+            </div>
+            
+            <div class="beer-card" data-category="stout">
+                <img src="./imgs/img-gustos/stout1.jpg" class="beer-img" alt="foto cerveza negra">
+                <div class="beer-info">
+                    <h3>Stout</h3>
+                    <p>Cerveza negra de cuerpo completo con notas de café, chocolate y un final suave y cremoso.</p>
+                    <a href="https://wa.me/1234567890" class="btn"><i class="fab fa-whatsapp"></i> Consultar</a>
+                </div>
+            </div>
+            
+            <div class="beer-card" data-category="box">
+                <img src="./imgs/img-gustos/cajon.jpg" class="beer-img" alt="foto cajon surtido">
+                <div class="beer-info">
+                    <h3>Cajón Surtido</h3>
+                    <p>Una selección de nuestras mejores cervezas para que puedas disfrutar de diferentes estilos.</p>
+                    <a href="https://wa.me/1234567890" class="btn"><i class="fab fa-whatsapp"></i> Consultar</a>
+                </div>
+            </div>
+            
+            <div class="beer-card" data-category="box">
+                <img src="./imgs/img-gustos/cajon.jpg" class="beer-img" alt="foto cajon unico">
+                <div class="beer-info">
+                    <h3>Cajón Único</h3>
+                    <p>Un cajón completo de tu cerveza favorita para tener siempre a mano.</p>
+                    <a href="https://wa.me/1234567890" class="btn"><i class="fab fa-whatsapp"></i> Consultar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-venta-info">
+        <p class="venta-info"> <strong>Hacemos ventas tanto al público como para comercios.</strong></p>
+        <a href="https://wa.me/3415993744" class="whatsapp-btn-beer-section">Consultanos 🍻</a>
+    </div>
+</section>
+
+<!-- Location Section -->
+<section class="location" id="location">
+    <div class="container location-container">
+        <h2>Ubicación</h2>
+        <p>Nos encontrarás en la ciudad de Rosario. Visitanos para comprar nuestros productos, tenemos 2 puntos de venta, uno en zona parque independencia y uno en zona sur, puedes visualizarlos a continuación.</p>
+    
+        <div class="map-container">
+            <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" class="map">
+                <defs>
+                    <linearGradient id="goldGradient13" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="rgb(249, 215, 121)" />
+                        <stop offset="100%" stop-color="rgb(143, 100, 14)" stop-opacity="0.88" />
+                    </linearGradient>
+                </defs>
+                <rect width="800" height="400" fill="#E8E8E8"/>
+                <path d="M100,100 L700,100 L700,300 L100,300 Z" stroke="#333" stroke-width="2" fill="none"/>
+                <circle cx="300" cy="200" r="20" fill="url(#goldGradient13)"/>
+                <text x="300" y="200" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">A</text>
+                <circle cx="500" cy="200" r="20" fill="url(#goldGradient13)"/>
+                <text x="500" y="200" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">B</text>
+                <text x="400" y="350" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">Mapa de Rosario</text>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact">
+    <div class="container">
+        <div class="footer-container">
+            <div class="footer-col">
+                <span class="footer-logo">Schäfer</span>
+                <p>Somos una cervecería artesanal comprometida con la calidad. Nuestro objetivo es brindarte lo mejor en cada botella, para que disfrutes de un sabor auténtico y una experiencia única.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Secciones</h3>
+                <ul class="footer-links">
+                    <li><a href="#about">Sobre nosotros</a></li>
+                    <li><a href="#beers">Cómo comprar</a></li>
+                    <li><a href="#gallery">Galería artesanal</a></li>
+                    <li><a href="#location">Ver mapa</a></li>
+                    <li><a href="#" id="terms-link">Términos y condiciones</a></li>
+                    <li><a href="#" id="privacy-link">Políticas de privacidad</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <div class="social-links">
+                    <a href="https://instagram.com/cerveceria.schafer/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Prohibida su venta a menores de 18 años. Beber con moderación.</p>
+            <p>&copy; 2024 Cervecería Schäfer. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/1234567890" class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Scroll to Top Button -->
+<div class="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+</div>
+
+<!-- Modals -->
+<div class="modal" id="terms-modal">
+    <div class="modal-content">
+        <button class="modal-close"><i class="fas fa-times"></i></button>
+        <h3 class="modal-title">Términos y Condiciones</h3>
+        <p>Bienvenido a los Términos y Condiciones de Cervecería Schäfer. Al utilizar nuestro sitio web y adquirir nuestros productos, aceptas los siguientes términos:</p>
+        
+        <h4>1. Edad mínima</h4>
+        <p>Todos nuestros productos contienen alcohol y están destinados exclusivamente para el consumo de personas mayores de 18 años. Al realizar una compra, confirmas que tienes la edad legal para consumir bebidas alcohólicas.</p>
+        
+        <h4>2. Pedidos y entregas</h4>
+        <p>Los pedidos están sujetos a disponibilidad de stock. Los tiempos de entrega son estimativos y pueden variar según la zona. Las entregas se realizan únicamente en la ciudad de Rosario y alrededores.</p>
+        
+        <h4>3. Política de devoluciones</h4>
+        <p>Si recibes un producto en mal estado o con defectos de fabricación, contáctanos dentro de las 24 horas posteriores a la recepción para gestionar el cambio.</p>
+        
+        <h4>4. Propiedad intelectual</h4>
+        <p>Todo el contenido de este sitio web, incluyendo logotipos, imágenes y textos, son propiedad de Cervecería Schäfer y están protegidos por las leyes de propiedad intelectual.</p>
+    </div>
+</div>
+
+<div class="modal" id="privacy-modal">
+    <div class="modal-content">
+        <button class="modal-close"><i class="fas fa-times"></i></button>
+        <h3 class="modal-title">Políticas de Privacidad</h3>
+        <p>En Cervecería Schäfer valoramos tu privacidad. Esta política describe cómo recopilamos y utilizamos tu información personal:</p>
+        
+        <h4>1. Información que recopilamos</h4>
+        <p>Recopilamos información básica como nombre, dirección, correo electrónico y número de teléfono cuando realizas un pedido o te suscribes a nuestro newsletter.</p>
+        
+        <h4>2. Uso de la información</h4>
+        <p>Utilizamos tu información para procesar pedidos, mejorar nuestros productos y servicios, y enviarte comunicaciones sobre promociones y eventos si has dado tu consentimiento.</p>
+        
+        <h4>3. Protección de datos</h4>
+        <p>Implementamos medidas de seguridad para proteger tu información personal contra acceso no autorizado o divulgación.</p>
+        
+        <h4>4. Cookies</h4>
+        <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Puedes configurar tu navegador para rechazar cookies, pero esto puede afectar algunas funcionalidades del sitio.</p>
+    </div>
+</div>
 
 
-    <!-- Botón de WhatsApp -->
-    <a href="https://wa.me/3412290622" class="whatsapp-button" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        if (navbar) {
+            window.addEventListener('scroll', function () {
+                navbar.classList.toggle('scrolled', window.scrollY > 50);
+            });
+        }
 
-    <!-- Botón de volver arriba -->
-    <a href="#" class="back-to-top"><img src="./imgs/flechaBackToTop.png" alt=""></a>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', function () {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="./js/script.js"></script>
+            // Close mobile menu on link click
+            const navItems = document.querySelectorAll('.nav-links a');
+            navItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+        }
+
+        // Scroll to top button
+        const scrollTopBtn = document.querySelector('.scroll-top');
+        if (scrollTopBtn) {
+            window.addEventListener('scroll', function () {
+                scrollTopBtn.classList.toggle('active', window.scrollY > 300);
+            });
+
+            scrollTopBtn.addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Modal functionality
+        const termsLink = document.getElementById('terms-link');
+        const privacyLink = document.getElementById('privacy-link');
+        const termsModal = document.getElementById('terms-modal');
+        const privacyModal = document.getElementById('privacy-modal');
+
+        termsLink?.addEventListener('click', function (e) {
+            e.preventDefault();
+            if (termsModal) {
+                termsModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        privacyLink?.addEventListener('click', function (e) {
+            e.preventDefault();
+            if (privacyModal) {
+                privacyModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        const modalCloseButtons = document.querySelectorAll('.modal-close');
+        modalCloseButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                termsModal?.classList.remove('active');
+                privacyModal?.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        window.addEventListener('click', function (e) {
+            if (e.target === termsModal) {
+                termsModal?.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+            if (e.target === privacyModal) {
+                privacyModal?.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Beer filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const beerCards = document.querySelectorAll('.beer-card');
+        const beerCardsContainer = document.querySelector('.beer-cards');
+
+        if (beerCardsContainer) {
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+                    let visibleCards = 0;
+
+                    beerCards.forEach(card => {
+                        const match = filter === 'all' || card.getAttribute('data-category') === filter;
+                        card.style.display = match ? 'block' : 'none';
+                        if (match) visibleCards++;
+                    });
+
+                    beerCardsContainer.style.justifyItems = 'center';
+                });
+            });
+        }
+
+        // Scroll animations
+        const animateElements = document.querySelectorAll(
+  '.about-img, .about-content, .beer-card, .gallery-item, .location-card, .map-container, .video-showcase, .gallery-row');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        animateElements.forEach(element => observer.observe(element));
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (!targetId || ['#', '#terms-link', '#privacy-link'].includes(targetId)) return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+</script>
+
+   
 </body>
 
 </html>
